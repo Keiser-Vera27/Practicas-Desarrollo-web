@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"><!--SE USA PARA QUE SE PUEDA MOSTRAR CUALQUIER CARACTER DEL IDIOMA ESPAÑOL EJEMPLO: Ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--NO SE PA QUÉ SIRVE ESTA MADRE-->
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="normalize/normalize.css"> <!--ASÍ SE ENLAZA LA HOJA DE NORMALIZE A LA DE HTML-->
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Staatliches&display=swap" rel="stylesheet"><!--ASÍ SE ENLAZA UNA FUENTE DE GOOGLE FONTS-->
+    <link rel="stylesheet" href="css/estilos.css"> <!--ASÍ SE ENLAZA LA HOJA DE CSS A LA DE HTML-->
+</head>
+<body>
+    <header class="header">
+        <!--PARA QUE AL DAR CLIC A LA IMAGEN O LOGO
+         ESTE NOS REDIRECCIONE A LA PAGINA DE INCIO/PRINCIPAL-->
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+    </nav>
+
+
+  <main class="contenedor">
+    <h1>ReactJS</h1>
+    
+    <div class="camisa">
+        <img class="camisa__imagen" src="img/3.jpg" alt="imagen de camisa">
+   
+    
+        <div class="camisa__descripion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos suscipit labore nihil repudiandae sit animi quam officia omnis quaerat minima blanditiis, recusandae magni quos quidem maiores ea voluptatem soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam nesciunt, in iure possimus sunt pariatur,</p> 
+
+            <form class="formulario">
+                <select class="formulario__campo">
+                    <option disabled selected>-- Talla --</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+
+                <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                <input class="formulario__submit" type="submit" value="Agregar al carrito">
+            </form>
+        </div>
+    </div>
+
+</main>
+
+    <footer class="footer">
+        <p class="footer__texto">FrontEnd Store - Todos los derechos Reservados 2022</p>
+    </footer>
+    
+
+</body>
+
+
+</html>
